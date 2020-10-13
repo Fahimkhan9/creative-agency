@@ -2,11 +2,27 @@ import React from 'react'
 import './Login.css'
 import logo from '../../images/logos/logo.png'
 import auth, { provider } from './firebase'
+import { useContext } from 'react'
+import { UserContext } from '../../App'
+import { useHistory, useLocation } from 'react-router-dom'
 function Login() {
+const  [loggedinuser,setLoggedinuser] = useContext(UserContext)
+
+let history = useHistory();
+  let location = useLocation();
+
+  let { from } = location.state || { from: { pathname: "/" } };
 
 const signin =() => {
   auth.signInWithPopup(provider)
-  .then(res  => console.log(res.user))
+  .then(res  => {
+    console.log(res.user.displayName)
+    console.log(res.user.email)
+
+  loggedinuser.name = res.user.displayName
+  loggedinuser.email = res.user.email
+  history.replace(from)
+  })
   .catch(err => alert(err))
 }
 

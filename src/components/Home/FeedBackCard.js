@@ -1,3 +1,4 @@
+import { Avatar } from '@material-ui/core'
 import React from 'react'
 
 function FeedBackCard({feedbackdata}) {
@@ -6,7 +7,10 @@ function FeedBackCard({feedbackdata}) {
         <div class="card-body ">
         <div className="d-flex align-items-center">
             <div>
-            <img src={feedbackdata.img}style={{height:"80px"}} alt=""/>
+           {feedbackdata.img ? <img src={feedbackdata.img}style={{height:"80px"}} alt=""/>
+           
+        : <Avatar/>
+        }
 
             </div>
             <div className="ml-3">

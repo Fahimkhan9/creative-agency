@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import heroimg  from '../../images/logos/Frame.png'
 function HeaderMain() {
     return (
@@ -12,7 +13,7 @@ function HeaderMain() {
                     <div className="col-md-6">
                         <h1 className="text-brand">Let's Grow your Brand to the Next Level</h1>
                         <p style={{lineHeight:"2rem"}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, mollitia. Facilis eum qui debitis vero. Atque consequatur minima, nulla iure reiciendis corrupti aperiam impedit quasi fugiat, ab voluptas est quis.</p>
-                        <button className="btn btn-dark ">Hire Us</button>
+                        <button className="btn btn-dark "><Link to="/placeorder">Hire Us</Link> </button>
                     </div>
                 </div>
             </div>

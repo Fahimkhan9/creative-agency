@@ -9,14 +9,14 @@ import carousel5 from '../../images/carousel-5.png'
 function OurWork() {
    
     return (
-        <div className="our-work bg-dark">
+        <div className="our-work bg-dark p-3">
                
          <div className="container">
          <h2 className="text-brand text-center mb-3">Here are some of <span style={{color:'#97ac84'}}>our Works</span></h2>
          <Carousel>
-  <Carousel.Item className="d-flex justify-content-center">
+  <Carousel.Item >
     <img
-      className="d-block "
+      className="d-block w-100 p-3"
       src={carousel1}
       alt="First slide"
       style={{height:"350px"}}
@@ -24,9 +24,9 @@ function OurWork() {
     
  
   </Carousel.Item>
-  <Carousel.Item  className="d-flex justify-content-center">
+  <Carousel.Item  >
     <img
-      className="d-block "
+      className="d-block w-100 p-3"
       src={carousel2}
       alt="Third slide"
       style={{height:"350px"}}
@@ -34,9 +34,9 @@ function OurWork() {
 
     
   </Carousel.Item>
-  <Carousel.Item  className="d-flex justify-content-center">
+  <Carousel.Item  >
     <img
-      className="d-block "
+      className="d-block w-100 p-3"
       src={carousel3}
       alt="Third slide"
       style={{height:"350px"}}
