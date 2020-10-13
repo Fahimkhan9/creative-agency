@@ -42,6 +42,7 @@ function Footer() {
                   class="form-control"
                   id="your Message"
                   rows="6"
+                  placeholder="your message"
                 ></textarea>
               </div>
               <button className="btn btn-dark pl-3" type="submit">

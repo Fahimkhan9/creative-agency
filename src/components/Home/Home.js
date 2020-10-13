@@ -16,8 +16,8 @@ function Home() {
             </div>
         <Companies/>
         <Services/>
-        {/* <OurWork/>
-         */}
+        <OurWork/>
+        
          <FeedBack/>
          <div className="footer">
          <Footer/>
