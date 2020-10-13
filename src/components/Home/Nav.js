@@ -38,7 +38,7 @@ const togglenavbar =() => {
               <NavLink class="nav-link" to="/">Contact Us</NavLink>
             </li>
             <li class="nav-item ml-5">
-              <NavLink class="nav-link btn btn-dark text-white px-4" to="/">Login</NavLink>
+              <NavLink class="nav-link btn btn-dark text-white px-4" to="/login">Login</NavLink>
             </li>
            
           </ul>
