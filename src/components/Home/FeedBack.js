@@ -28,7 +28,7 @@ const feedbackdata = [
 
 function FeedBack() {
     return (
-        <div className="feedback"> 
+        <div className="feedback mb-5"> 
             <div className="container">
                 <h2 className="text-brand text-center mb-3">Clients <span style={{color:"#97ac84"}}>Feedback</span>
                 </h2>

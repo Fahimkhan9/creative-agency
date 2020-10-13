@@ -6,6 +6,7 @@ import Companies from './Companies'
 import Services from './Services'
 import OurWork from './OurWork'
 import FeedBack from './FeedBack'
+import Footer from './Footer'
 function Home() {
     return (
         <div>
@@ -18,6 +19,10 @@ function Home() {
         {/* <OurWork/>
          */}
          <FeedBack/>
+         <div className="footer">
+         <Footer/>
+         </div>
+        
         </div>
     )
 }
