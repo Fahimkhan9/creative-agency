@@ -14,7 +14,7 @@ function FeedbackForm() {
   .then(succees => console.log("successfully posted"))
   };
     return (
-        <div>
+        <div className="container p-5" style={{backgroundColor:"#f4f7fc"}}>
                  <form onSubmit={handleSubmit(onSubmit)}>
  <div className="form-group">
      <input type="text" name="name" className="form-control" ref={register({ required: true })}  placeholder="your Name"/>

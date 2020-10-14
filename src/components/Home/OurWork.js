@@ -12,7 +12,7 @@ function OurWork() {
         <div className="our-work bg-dark p-3">
                
          <div className="container">
-         <h2 className="text-brand text-center mb-3">Here are some of <span style={{color:'#97ac84'}}>our Works</span></h2>
+         <h2 className="text-brand text-center mb-3"> <span style={{color:"#fff"}}>Here are some of</span>  <span style={{color:'#97ac84'}}>our Works</span></h2>
          <Carousel>
   <Carousel.Item >
     <img

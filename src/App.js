@@ -6,6 +6,9 @@ import Login from "./components/Login/Login";
 import Add from "./components/Add/Add";
 import PlaceOrder from "./components/PlaceOrder/PlaceOrder";
 import PrivateRoute from "./components/Login/PrivateRoute";
+import ServiceList from "./components/PlaceOrder/ServiceList";
+import Sidebar from "./components/Shared/Sidebar";
+import FeedbackForm from "./components/PlaceOrder/FeedbackForm";
 
 export const UserContext = createContext()
 
@@ -31,7 +34,20 @@ function App() {
           </Route>
           
           <PrivateRoute exact path="/placeorder">
+            <Sidebar/>
             <PlaceOrder/>
+          </PrivateRoute>
+          <PrivateRoute exact  path="/servicelist">
+            <Sidebar/>
+            <ServiceList/>
+          </PrivateRoute>
+          <PrivateRoute exact path="/review">
+            <Sidebar/>
+            <FeedbackForm/>
+          </PrivateRoute>
+          <PrivateRoute exact path='/allservice'>
+<Sidebar/>
+
           </PrivateRoute>
         </Switch>
       </div>

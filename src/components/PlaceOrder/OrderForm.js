@@ -20,7 +20,7 @@ function OrderForm() {
 
 
   return (
-    <div>
+    <div className="container p-5" style={{backgroundColor:"#f4f7fc"}}>
              <form onSubmit={handleSubmit(onSubmit)}>
  <div className="form-group">
      <input type="text" name="name" className="form-control" ref={register({ required: true })}  placeholder="your Name/Company's Name"/>
@@ -33,10 +33,14 @@ function OrderForm() {
 
  </div>
  <div className="form-group">
-     <input type="text" name="service" className="form-control" ref={register({ required: true })} placeholder="Service"/>
-     {errors.service && <span style={{color:"red"}}>Service is required</span>}
+              <select class="form-control " name="service"   ref={register({ required: true })}>
+                <option value="Web Development" name='Web Development'  ref={register({ required: true })}>Web Development</option>
+                <option value="Web and Mobile Design"  name="Web and Mobile Design"  ref={register({ required: true })}>Web and Mobile Design</option>
+                <option value="Graphics Design" name="Graphics Design"  ref={register({ required: true })}>Graphics Design</option>
+              </select>
 
- </div>
+              {errors.service && <span>This field is required</span>}
+            </div>
  <div className="form-group">
      <input type="text" name="detail" className="form-control" ref={register({ required: true })} placeholder="Project Detail"/>
      {errors.detail && <span style={{color:"red"}}>Detail is required</span>}
@@ -45,15 +49,7 @@ function OrderForm() {
 
 
 
- <div className="form-group">
-              <select class="form-control " name="gender"   ref={register({ required: true })}>
-                <option value="male" name='male'  ref={register({ required: true })}>Male</option>
-                <option value="female"  name="female"  ref={register({ required: true })}>Female</option>
-                <option value="other" name="other"  ref={register({ required: true })}>Other</option>
-              </select>
-
-              {errors.gender && <span>This field is required</span>}
-            </div>
+ 
 
 
  <div className="form-group">

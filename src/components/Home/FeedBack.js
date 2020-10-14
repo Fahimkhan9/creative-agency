@@ -9,6 +9,7 @@ import FeedBackCard from './FeedBackCard'
 
 function FeedBack() {
     const [allreview,setAllreview] = useState([])
+    
     useEffect(() => {
         fetch('http://localhost:5000/getallreviews',)
         .then(res  => res.json())
