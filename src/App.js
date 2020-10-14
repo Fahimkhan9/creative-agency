@@ -10,6 +10,7 @@ import ServiceList from "./components/PlaceOrder/ServiceList";
 import Sidebar from "./components/Shared/Sidebar";
 import FeedbackForm from "./components/PlaceOrder/FeedbackForm";
 import AllService from "./components/Admin/AllService";
+import AddService from "./components/Admin/AddService";
 
 export const UserContext = createContext()
 
@@ -49,6 +50,10 @@ function App() {
           <PrivateRoute exact path='/allservice'>
 <Sidebar/>
 <AllService/>
+          </PrivateRoute>
+          <PrivateRoute exact path="/addservice">
+            <Sidebar/>
+            <AddService/>
           </PrivateRoute>
         </Switch>
       </div>

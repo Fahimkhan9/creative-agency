@@ -39,7 +39,7 @@ function Sidebar() {
         <NavLink class="nav-link ml-5" to="/allservice">All Service</NavLink>
       </li>
       <li class="nav-item">
-        <NavLink class="nav-link ml-5" to="/review">Add Service</NavLink>
+        <NavLink class="nav-link ml-5" to="/addservice">Add Service</NavLink>
       </li>
       <li class="nav-item">
         <NavLink class="nav-link ml-5" to="/review">Make Admin</NavLink>
