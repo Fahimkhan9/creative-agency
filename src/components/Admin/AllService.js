@@ -4,7 +4,7 @@ import AllServiceCard from './AllServiceCard'
 function AllService() {
     const [allOrders,setAllOrders] = useState([])
     useEffect(() => {
-fetch("http://localhost:5000/getallservice")
+fetch("http://localhost:5000/getallorders")
 .then(res => res.json())
 .then(data => setAllOrders(data))
     },[allOrders])

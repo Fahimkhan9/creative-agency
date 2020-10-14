@@ -29,6 +29,7 @@ fetch('http://localhost:5000/addservice',{
 })
 
 
+
         console.log(data)
       
       };
