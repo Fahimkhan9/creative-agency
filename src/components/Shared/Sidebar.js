@@ -36,7 +36,7 @@ function Sidebar() {
         <NavLink class="nav-link ml-5" to="/review">Review</NavLink>
       </li>
       <li class="nav-item">
-        <NavLink class="nav-link ml-5" to="/review">All Service</NavLink>
+        <NavLink class="nav-link ml-5" to="/allservice">All Service</NavLink>
       </li>
       <li class="nav-item">
         <NavLink class="nav-link ml-5" to="/review">Add Service</NavLink>
