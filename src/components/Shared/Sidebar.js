@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { UserContext } from '../../App'
 import logo from '../../images/logos/logo.png'
@@ -14,36 +14,51 @@ function Sidebar() {
     const [loggedinuser,setLoggedinuser] = useContext(UserContext)
     const [isAdmin,setISAdmin] = useState(false)
 
+
+    useEffect(() => {
+fetch("http://localhost:5000/isdoctor",{
+  method:"POST",
+  headers:{"Content-Type":'application/json'},
+  body:JSON.stringify({email: loggedinuser.email})
+})
+.then(res => res.json())
+.then(data => setISAdmin(data))
+    },[])
+
+   
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <NavLink class="navbar-brand" to="/">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <NavLink className="navbar-brand" to="/">
 <img src={logo} style={{height:"50px"}} alt=""/>
   </NavLink>
-  <button onClick={togglenavbar} class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button onClick={togglenavbar} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
 
-  <div class={navclass} id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <NavLink class="nav-link ml-5" to="/placeorder">Order </NavLink>
+  <div className={navclass} id="navbarSupportedContent">
+    <ul className="navbar-nav ml-auto">
+      <li className="nav-item active">
+        <NavLink className="nav-link ml-5" to="/placeorder">Order </NavLink>
       </li>
-      <li class="nav-item">
-        <NavLink class="nav-link ml-5" to="/servicelist">Service List</NavLink>
+      <li className="nav-item">
+        <NavLink className="nav-link ml-5" to="/servicelist">Service List</NavLink>
       </li>
-      <li class="nav-item">
-        <NavLink class="nav-link ml-5" to="/review">Review</NavLink>
+      <li className="nav-item">
+        <NavLink className="nav-link ml-5" to="/review">Review</NavLink>
       </li>
-      <li class="nav-item">
-        <NavLink class="nav-link ml-5" to="/allservice">All Service</NavLink>
-      </li>
-      <li class="nav-item">
-        <NavLink class="nav-link ml-5" to="/addservice">Add Service</NavLink>
-      </li>
-      <li class="nav-item">
-        <NavLink class="nav-link ml-5" to="/review">Make Admin</NavLink>
-      </li>
+
+   {isAdmin &&   <li className="nav-item">
+        <NavLink className="nav-link ml-5" to="/allservice">All Service</NavLink>
+      </li>}
+   { isAdmin &&  <li className="nav-item">
+        <NavLink className="nav-link ml-5" to="/addservice">Add Service</NavLink>
+      </li>}
+    {isAdmin &&  <li className="nav-item">
+        <NavLink className="nav-link ml-5" to="/makeadmin">Make Admin</NavLink>
+      </li>}
+    
+    
      
     </ul>
 

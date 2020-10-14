@@ -14,7 +14,7 @@ const [allservices,setAllServices] = useState([])
         .then(res => res.json())
         .then(data => setAllServices(data))
     },[])
-    console.log(allservices);
+
     return (
         <div className="services  mb-5">
             <div className="container">
@@ -26,7 +26,7 @@ const [allservices,setAllServices] = useState([])
    
         <CircularProgress/>
 :
-    allservices.map(servicedata => <ServicesCard  servicedata={servicedata}/>)
+    allservices.map(servicedata => <ServicesCard key={servicedata._id}  servicedata={servicedata}/>)
 }
             </div>
             </div>

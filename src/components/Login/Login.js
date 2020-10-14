@@ -16,8 +16,7 @@ let history = useHistory();
 const signin =() => {
   auth.signInWithPopup(provider)
   .then(res  => {
-    console.log(res.user.displayName)
-    console.log(res.user.email)
+
 
   loggedinuser.name = res.user.displayName
   loggedinuser.email = res.user.email
@@ -31,10 +30,10 @@ const signin =() => {
  <div className="container m-5 "  >
                 <img src={logo}  style={{height:"100px"}} alt=""/>
               
-                <div class="card m-3" style={{width:'20rem'}} >
-  <div class="card-body text-center ">
-    <h5 class="card-title">Login to Continue</h5>
-    <h6 class="card-subtitle mb-2 btn btn-dark text-whitespace" onClick={signin}>Continue With Google</h6>
+                <div className="card m-3" style={{width:'20rem'}} >
+  <div className="card-body text-center ">
+    <h5 className="card-title">Login to Continue</h5>
+    <h6 className="card-subtitle mb-2 btn btn-dark text-whitespace" onClick={signin}>Continue With Google</h6>
   
   
   </div>

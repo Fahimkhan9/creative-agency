@@ -17,29 +17,29 @@ function Footer() {
           </div>
           <div className="col-md-6">
             <form>
-              <div class="form-group">
+              <div className="form-group">
            
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Email Address"
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Your Name/company's Name"
                 />
               </div>
 
-              <div class="form-group">
+              <div className="form-group">
                 
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="your Message"
                   rows="6"
                   placeholder="your message"

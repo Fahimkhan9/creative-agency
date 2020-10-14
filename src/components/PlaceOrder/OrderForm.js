@@ -14,7 +14,7 @@ function OrderForm() {
     })
     .then(res => res.json())
     .then(succees => console.log("successfully posted"))
-    console.log(data)
+
   
   };
 
@@ -61,7 +61,7 @@ function OrderForm() {
 
 
       
-      <button className="btn btn-dark px-4" type="submit" >Send</button>
+      <button className="btn btn-dark px-4" type="submit" >Make Order</button>
     </form>
     </div>
   )

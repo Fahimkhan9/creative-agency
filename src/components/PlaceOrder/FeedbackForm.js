@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 function FeedbackForm() {
   const { register, handleSubmit, watch, errors } = useForm();
   const onSubmit = data =>{
-  console.log(data);
+
   fetch("http://localhost:5000/addreview",{
     method:"POST",
     headers:{"Content-Type":"application/json"},
@@ -39,7 +39,7 @@ function FeedbackForm() {
 
 
       
-      <button className="btn btn-dark px-4" type="submit" >Send</button>
+      <button className="btn btn-dark px-4" type="submit" >Add Review</button>
     </form>
         </div>
     )

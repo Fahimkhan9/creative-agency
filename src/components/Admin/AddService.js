@@ -30,7 +30,7 @@ fetch('http://localhost:5000/addservice',{
 
 
 
-        console.log(data)
+     
       
       };
     return (
@@ -57,7 +57,7 @@ fetch('http://localhost:5000/addservice',{
 
 
       
-      <button className="btn btn-dark px-4" type="submit" >Send</button>
+      <button className="btn btn-dark px-4" type="submit" >Add</button>
     </form>
         </div>
     )

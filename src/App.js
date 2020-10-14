@@ -11,6 +11,7 @@ import Sidebar from "./components/Shared/Sidebar";
 import FeedbackForm from "./components/PlaceOrder/FeedbackForm";
 import AllService from "./components/Admin/AllService";
 import AddService from "./components/Admin/AddService";
+import MakeAdmin from "./components/Admin/MakeAdmin";
 
 export const UserContext = createContext()
 
@@ -54,6 +55,10 @@ function App() {
           <PrivateRoute exact path="/addservice">
             <Sidebar/>
             <AddService/>
+          </PrivateRoute>
+          <PrivateRoute exact path="/makeadmin">
+            <Sidebar/>
+            <MakeAdmin/>
           </PrivateRoute>
         </Switch>
       </div>

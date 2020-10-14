@@ -3,8 +3,8 @@ import React from 'react'
 
 function FeedBackCard({feedbackdata}) {
     return (
-        <div class="card col-md-4 " >
-        <div class="card-body ">
+        <div className="card col-md-4 " >
+        <div className="card-body ">
         <div className="d-flex align-items-center">
             <div>
            {feedbackdata.img ? <img src={feedbackdata.img}style={{height:"80px"}} alt=""/>

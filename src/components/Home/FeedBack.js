@@ -15,7 +15,7 @@ function FeedBack() {
         .then(res  => res.json())
         .then(data=> {
             
-            console.log(data)
+     
         setAllreview(data)
         })
     },[allreview])
@@ -28,7 +28,7 @@ function FeedBack() {
                 <div className="row">
 
 {
-    allreview.map(feedbackdata => <FeedBackCard feedbackdata={feedbackdata} />)
+    allreview.map(feedbackdata => <FeedBackCard key={feedbackdata._id} feedbackdata={feedbackdata} />)
 }
                 </div>
             </div>

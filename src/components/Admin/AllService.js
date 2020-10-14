@@ -24,7 +24,7 @@ fetch("http://localhost:5000/getallorders")
             </table>
    
             {
-                allOrders.map(orderdata => <AllServiceCard orderdata={orderdata}/>)
+                allOrders.map(orderdata => <AllServiceCard key={orderdata._id} orderdata={orderdata}/>)
             }
       
         </div>
