@@ -7,7 +7,7 @@ function Footer() {
         <div className="row d-flex align-items-center">
           <div className="col-md-6">
             <h4 className="text-brand">
-              Let's handle your <br/> projects,professionally
+              Let's handle your <br /> projects,professionally
             </h4>
             <p style={{ lineHeight: "2rem" }}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
@@ -18,7 +18,6 @@ function Footer() {
           <div className="col-md-6">
             <form>
               <div className="form-group">
-           
                 <input
                   type="email"
                   className="form-control"
@@ -27,7 +26,6 @@ function Footer() {
                 />
               </div>
               <div className="form-group">
-               
                 <input
                   type="email"
                   className="form-control"
@@ -37,7 +35,6 @@ function Footer() {
               </div>
 
               <div className="form-group">
-                
                 <textarea
                   className="form-control"
                   id="your Message"
@@ -51,7 +48,9 @@ function Footer() {
             </form>
           </div>
         </div>
-  <p className="text-center mt-2">Copyright Orange Lab {(new Date()).getFullYear()}</p>
+        <p className="text-center mt-2">
+          Copyright Orange Lab {new Date().getFullYear()}
+        </p>
       </div>
     </div>
   );

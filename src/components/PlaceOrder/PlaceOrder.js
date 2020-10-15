@@ -1,18 +1,12 @@
-import React from 'react'
-import FeedbackForm from './FeedbackForm'
-
-import OrderForm from './OrderForm'
-import ServiceList from './ServiceList'
-import Sidebar from '../Shared/Sidebar'
+import React from "react";
+import OrderForm from "./OrderForm";
 
 function PlaceOrder() {
-    return (
-        <div>
-
-<OrderForm/>
-
-        </div>
-    )
+  return (
+    <div>
+      <OrderForm />
+    </div>
+  );
 }
 
-export default PlaceOrder
+export default PlaceOrder;
