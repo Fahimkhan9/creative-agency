@@ -44,35 +44,15 @@ function OrderForm() {
           )}
         </div>
         <div className="form-group">
-          <select
-            class="form-control "
+        <input
+            type="text"
             name="service"
+            className="form-control"
             ref={register({ required: true })}
-          >
-            <option
-              value="Web Development"
-              name="Web Development"
-              ref={register({ required: true })}
-            >
-              Web Development
-            </option>
-            <option
-              value="Web and Mobile Design"
-              name="Web and Mobile Design"
-              ref={register({ required: true })}
-            >
-              Web and Mobile Design
-            </option>
-            <option
-              value="Graphics Design"
-              name="Graphics Design"
-              ref={register({ required: true })}
-            >
-              Graphics Design
-            </option>
-          </select>
+            placeholder="service"
+          />
 
-          {errors.service && <span>This field is required</span>}
+          {errors.service && <span>Service  is required</span>}
         </div>
         <div className="form-group">
           <input

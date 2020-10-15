@@ -51,7 +51,7 @@ function App() {
           </PrivateRoute>
 
 
-          <PrivateRoute exact path='/allservice'>
+          <PrivateRoute exact path='/allorder'>
 <Sidebar/>
 <AllService/>
           </PrivateRoute>

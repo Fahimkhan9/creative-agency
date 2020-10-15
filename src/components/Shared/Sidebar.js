@@ -48,7 +48,7 @@ function Sidebar() {
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
               <NavLink className="nav-link ml-5" to="/placeorder">
-                Order{" "}
+                Order
               </NavLink>
             </li>
             <li className="nav-item">
@@ -64,8 +64,8 @@ function Sidebar() {
 
             {isAdmin && (
               <li className="nav-item">
-                <NavLink className="nav-link ml-5" to="/allservice">
-                  All Service
+                <NavLink className="nav-link ml-5" to="/allorder">
+                  All Order
                 </NavLink>
               </li>
             )}
