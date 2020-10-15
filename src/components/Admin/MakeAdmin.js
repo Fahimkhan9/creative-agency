@@ -6,7 +6,7 @@ function MakeAdmin() {
      
      const onSubmit = data =>{
       
-  fetch("http://localhost:5000/makeadmin",{
+  fetch("https://radiant-anchorage-14394.herokuapp.com/makeadmin",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(data)

@@ -7,7 +7,7 @@ function OrderForm() {
   const [loggedinuser, setLoggedinuser] = useContext(UserContext);
   const onSubmit = (data) => {
     data.email = loggedinuser.email;
-    fetch("http://localhost:5000/addorder", {
+    fetch("https://radiant-anchorage-14394.herokuapp.com/addorder", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

@@ -6,7 +6,7 @@ function FeedBack() {
   const [allreview, setAllreview] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/getallreviews")
+    fetch("https://radiant-anchorage-14394.herokuapp.com/getallreviews")
       .then((res) => res.json())
       .then((data) => {
         setAllreview(data);

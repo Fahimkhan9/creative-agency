@@ -16,7 +16,7 @@ setFile(newfile)
       formData.append('des',data.desciption)
 
 
-fetch('http://localhost:5000/addservice',{
+fetch('https://radiant-anchorage-14394.herokuapp.com/addservice',{
     method:"POST",
     body:formData
 })

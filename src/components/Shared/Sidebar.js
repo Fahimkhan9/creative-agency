@@ -16,7 +16,7 @@ function Sidebar() {
   const [isAdmin, setISAdmin] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/isdoctor", {
+    fetch("https://radiant-anchorage-14394.herokuapp.com/isadmin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: loggedinuser.email }),
