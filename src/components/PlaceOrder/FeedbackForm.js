@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 function FeedbackForm() {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
+    alert('we have received your review')
     fetch("https://creative-agency-server-1c0w.onrender.com/addreview", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

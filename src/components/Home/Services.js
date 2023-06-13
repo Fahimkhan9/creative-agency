@@ -2,15 +2,18 @@ import { CircularProgress } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 
 import ServicesCard from "./ServicesCard";
+import Axios from "axios";
 
 function Services() {
   const [allservices, setAllServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://creative-agency-server-1c0w.onrender.com/allservcies")
-      .then((res) => res.json())
-      .then((data) => setAllServices(data));
-  }, []);
+    Axios.get("https://creative-agency-server-1c0w.onrender.com/allservcies")
+      .then((res) => {
+        console.log(res.data)
+        
+        setAllServices(res.data)})
+  }, [allservices]);
 
   return (
     <div className="services  mb-5">

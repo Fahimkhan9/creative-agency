@@ -5,7 +5,7 @@ function MakeAdmin() {
      const { register, handleSubmit,  errors } = useForm();
      
      const onSubmit = data =>{
-      
+      alert('success,added to admin')
   fetch("https://creative-agency-server-1c0w.onrender.com/makeadmin",{
       method:"POST",
       headers:{"Content-Type":"application/json"},

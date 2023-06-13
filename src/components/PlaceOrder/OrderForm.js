@@ -7,6 +7,7 @@ function OrderForm() {
   const [loggedinuser, setLoggedinuser] = useContext(UserContext);
   const onSubmit = (data) => {
     data.email = loggedinuser.email;
+    alert('succesfully placed your order')
     fetch("https://creative-agency-server-1c0w.onrender.com/addorder", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
