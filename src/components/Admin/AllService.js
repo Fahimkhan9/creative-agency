@@ -4,7 +4,7 @@ import AllServiceCard from "./AllServiceCard";
 function AllService() {
   const [allOrders, setAllOrders] = useState([]);
   useEffect(() => {
-    fetch("https://radiant-anchorage-14394.herokuapp.com/getallorders")
+    fetch("https://creative-agency-server-1c0w.onrender.com/getallorders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [allOrders]);

@@ -16,7 +16,7 @@ function Sidebar() {
   const [isAdmin, setISAdmin] = useState(false);
 
   useEffect(() => {
-    fetch("https://radiant-anchorage-14394.herokuapp.com/isadmin", {
+    fetch("https://creative-agency-server-1c0w.onrender.com/isadmin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: loggedinuser.email }),

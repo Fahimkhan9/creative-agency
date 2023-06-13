@@ -7,7 +7,7 @@ function Services() {
   const [allservices, setAllServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://radiant-anchorage-14394.herokuapp.com/allservcies")
+    fetch("https://creative-agency-server-1c0w.onrender.com/allservcies")
       .then((res) => res.json())
       .then((data) => setAllServices(data));
   }, []);

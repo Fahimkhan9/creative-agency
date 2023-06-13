@@ -7,7 +7,7 @@ function ServiceList() {
   const [loggedinuser, setLoggedinuser] = useContext(UserContext);
 
   useEffect(() => {
-    fetch(`https://radiant-anchorage-14394.herokuapp.com/getorders?email=${loggedinuser.email}`)
+    fetch(`https://creative-agency-server-1c0w.onrender.com/getorders?email=${loggedinuser.email}`)
       .then((res) => res.json())
       .then((data) => {
         setAllreview(data);

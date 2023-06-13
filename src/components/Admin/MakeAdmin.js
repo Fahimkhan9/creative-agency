@@ -6,7 +6,7 @@ function MakeAdmin() {
      
      const onSubmit = data =>{
       
-  fetch("https://radiant-anchorage-14394.herokuapp.com/makeadmin",{
+  fetch("https://creative-agency-server-1c0w.onrender.com/makeadmin",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(data)
